@@ -1,15 +1,8 @@
-terraform {
-  required_providers {
-    azurerm = {
-      source = "hashicorp/azurerm"
-      version = ">= 2.26"
-    }
-  }
-}
-
 provider "azurerm" {
+  version = "=2.50.0"
   features {}
 }
+
 
 resource "azurerm_api_management" "apim" {
   name                = "Test-APIM-terraform2"
